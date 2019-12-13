@@ -5,7 +5,7 @@ export const FETCH_QUOTE_SUCCESS = 'FETCH_QUOTE_SUCCESS';
 export const FETCH_QUOTE_FAILURE = 'FETCH_QUOTE_FAILURE';
 
 
-export const getCard = () => dispatch => {
+export const getQuote = () => dispatch => {
     dispatch({ type: FETCH_QUOTE_START });
     axios.get('https://quote-garden.herokuapp.com/quotes/random')
     .then(res => {
